@@ -106,7 +106,7 @@ certbot certonly "${method_args[@]}" \
                 "${HOSTNAMES[@]}" -m "$EMAIL" \
                 $agree_tos \
                 "${deploy_hook[@]}" \
-                --force-interactive --no-eff-email
+                --no-interactive --no-eff-email
 
 symlink_with_backup() {
     if [ -e "$2" ]; then
